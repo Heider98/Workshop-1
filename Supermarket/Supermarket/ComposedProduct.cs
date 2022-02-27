@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace Supermarket
 {
@@ -10,19 +6,34 @@ namespace Supermarket
     {
         public float Discount { get; set; }
 
-        //to solve
-        //public string Products { get; set; }
-        // to solve
-        List<Product> Products = new List<Product>();
+        public ICollection Products { get; set; }
 
+        
         public override decimal ValueToPay()
         {
-            return Price;
+            decimal acomulation = 0;
+            foreach (Product product in Products)
+            {
+                acomulation += product.ValueToPay();
+            }
+            //decimal tDiscount = acomulation * (decimal)Discount;
+            //decimal pvalue = acomulation - tDiscount;
+            return acomulation;
         }
         public override string ToString()
         {
-            return base.ToString();
+            string asisten = "";
+            foreach (Product productd in Products)
+            {
+                asisten += productd.Description + (",");
+            }
+            return $"{Id} {Description}" +
+                   $"\n\tProducts...: {$"{asisten}",9}" +
+                   $"\n\tDiscount...: {$"{Discount:P2}",9}" +
+                   $"\n\tValue......: {$"{ValueToPay():C2}",9}";
         }
+
+
 
     }
 }

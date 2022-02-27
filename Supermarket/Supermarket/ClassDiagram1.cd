@@ -6,27 +6,43 @@
       <HashCode>AAACAAAAAQAgAAAEAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Supermarket.FixedPriceProduct">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="Supermarket.FixedPriceProduct" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FixedPriceProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Supermarket.VariablePriceProduct">
-    <Position X="3.25" Y="1.25" Width="1.5" />
+    <Position X="3" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAQgAAAAAA=</HashCode>
       <FileName>VariablePriceProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Supermarket.ComposedProduct">
-    <Position X="5.5" Y="1" Width="1.5" />
+    <Position X="4.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAgAAAAAAAAQ=</HashCode>
       <FileName>ComposedProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Supermarket.Invoice">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAASAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Supermarket.IPay">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
