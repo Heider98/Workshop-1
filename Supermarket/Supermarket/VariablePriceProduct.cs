@@ -16,7 +16,6 @@ namespace Supermarket
             price1 = tax + price;
             return price1;
         }
-
         public override string ToString()
         {
             return $"   {Id} {Description}"+
