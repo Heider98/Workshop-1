@@ -10,20 +10,21 @@ namespace Supermarket
 
         public override decimal ValueToPay()
         {
-            decimal tax, price;
+            decimal tax, price, price1;
             price = (decimal)Quantity * Price;
             tax = price * (decimal)Tax;
-            return Price= tax+price;
+            price1 = tax + price;
+            return price1;
         }
 
         public override string ToString()
         {
-            return $"{Id} {Description}"+
-                   $"\n\tMeasurement:{$"{Measurement}",13}" + 
-                   $"\n\tQuantity...:{$"{Quantity:F2}",13}"+
-                   $"\n\tPrice......:{$"{Price:C2}",13}" +
-                   $"\n\tTax........:{$"{Tax:P2}",13}" +
-                   $"\n\tValue......:{$"{ValueToPay():C2}", 13}";
+            return $"   {Id} {Description}"+
+                   $"\n\tMeasurement:{$"{Measurement}",14}" + 
+                   $"\n\tQuantity...:{$"{Quantity:F2}",14}"+
+                   $"\n\tPrice......:{$"{Price:C2}",14}" +
+                   $"\n\tTax........:{$"{Tax:P2}",14}" +
+                   $"\n\tValue......:{$"{ValueToPay():C2}", 14}";
         }
     }
 }

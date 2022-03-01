@@ -7,13 +7,15 @@ namespace Supermarket
        
         public override decimal ValueToPay()
         {
-            return Price=(Price*(decimal)Tax)+Price;
+            decimal price = 0;
+            price = (Price * (decimal)Tax) + Price;
+            return price;
              
         }
 
         public override string ToString()
         {
-            return $"{base.ToString()}"+
+            return $"   {base.ToString()}"+
                 $"\n\tValue......: {$"{ValueToPay():C2}",14}";
         }
     }

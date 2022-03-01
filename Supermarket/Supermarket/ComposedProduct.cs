@@ -2,7 +2,7 @@
 
 namespace Supermarket
 {
-    internal class ComposedProduct : Product
+    public class ComposedProduct : Product
     {
         public float Discount { get; set; }
 
@@ -16,9 +16,9 @@ namespace Supermarket
             {
                 acomulation += product.ValueToPay();
             }
-            //decimal tDiscount = acomulation * (decimal)Discount;
-            //decimal pvalue = acomulation - tDiscount;
-            return acomulation;
+            decimal tDiscount = acomulation * (decimal)Discount;
+            decimal pvalue = acomulation - tDiscount;
+            return pvalue;
         }
         public override string ToString()
         {
@@ -27,10 +27,10 @@ namespace Supermarket
             {
                 asisten += productd.Description + (",");
             }
-            return $"{Id} {Description}" +
-                   $"\n\tProducts...: {$"{asisten}",9}" +
-                   $"\n\tDiscount...: {$"{Discount:P2}",9}" +
-                   $"\n\tValue......: {$"{ValueToPay():C2}",9}";
+            return $"   {Id} {Description}" +
+                   $"\n\tProducts...: {$"{asisten}",14}" +
+                   $"\n\tDiscount...: {$"{Discount:P2}",14}" +
+                   $"\n\tValue......: {$"{ValueToPay():C2}",14}";
         }
 
 
