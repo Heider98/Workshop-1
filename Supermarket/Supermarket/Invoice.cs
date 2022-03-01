@@ -24,7 +24,7 @@
                 Console.WriteLine(product.ToString());
             } 
             return $"                       ============" +
-                   $"\n\tTOTAL:        {$"{ValueToPay():C2}",14}";
+                   $"\n\tTOTAL:       {$"{ValueToPay():C2}",14}";
         }
         
         
